@@ -15,12 +15,10 @@ All programming languages use the same basic concepts
 - Functions
 - Loops
 
-Exercises:
+Exercises: 'Hello World' program
 
-'Hello World' program
-
-Looking at code
-	- Psychlomatic complexity
+- Looking at code
+	- Cyclomatic complexity
 
 How does the internet work?
 - User
