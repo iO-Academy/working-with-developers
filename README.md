@@ -15,7 +15,8 @@ All programming languages use the same basic concepts
 - Functions
 - Loops
 
-Exercises: 'Hello World' program
+Exercises: 'Hello World' program  
+[Fork this](https://replit.com/@MikeOram/Working-with-developers#index.js)
 
 - Looking at code
 	- Cyclomatic complexity
