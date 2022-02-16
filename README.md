@@ -1,13 +1,15 @@
 # Working with developers
 
+[Use these slides](https://docs.google.com/presentation/d/1io0OSH00rFhvylfgk_PnqqhXQ60sbO08JNYn_adyhBs/edit#slide=id.g10e8e37efd6_0_3)
+
 What do you want to get out of today? Specific things to learn?
 
-What is programming?
+#### What is programming?
 - Commands to a computer
 - Storing, manipulating, displaying data
 - input and output
 
-How?
+#### How?
 All programming languages use the same basic concepts
 - Statements
 - Data types (booleans, strings, ints, floats, arrays, objects)
@@ -111,30 +113,38 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
   ```
 </details>
 
-- Looking at code
+#### Looking at code
 	- Cyclomatic complexity
+	- Average size system looks like:
+		- 6TB of data
+		- 1TB updated daily
+		- 2.4GB of logs (~82.5 million)
+		- 60 Virtual machines
 
-How does the internet work?
-- User
-- Browser
-- HTTP Request
-- DNS Lookup
-- IP Address
-- Server
-- Apache/Nginx
-- PHP -> Runs your program
-- returns some text (string)
-- HTTP Response
-- Browser
-- DOM
-
+#### How does the internet work?
+- Show diagrams in slides
 - Show browser developer tools
+	- show network requests happening on a website load
 
-Technology stack (add to drawing)
-- HTML & CSS
-- JavaScript
-- PHP
-- MySQL
+#### Tips for talking to developers
+
+- Dont make assumptions
+- Schedule time with developers
+	- Don't seagull
+	- Don't secret squirrel
+	- On average it takes 15 minutes to return to previous point when interupted
+- Use images, flow charts, decision tables
+- Use examples! 
+- Ensure all the information required is provided:
+```
+1 reward point for every £1 you spend
+100 points can be exchanged for £10
+20% VAT is not included
+```
+- Write good stories!
+	- Give problems, not solutions
+	- Don't dictate tech
+	- https://www.romanpichler.com/blog/10-tips-writing-good-user-stories/
 
 Advanced concepts:
 Testing (Unit, Integration, Acceptance)
