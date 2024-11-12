@@ -27,16 +27,18 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
   
   ```javascript
 	
-	// step 1
+	// step 1 - Just outputting a simple message
 	output('hello world, how are you?');
 
-	// step 2
+	// step 2 - basic bit of maths to generate a random number up to 1000 - used in the next step
 	var rand = Math.random() * 1000;
 	output('hello world, how are you?');
 	output(rand);
 
 	
-	// step 3
+	// step 3 - using the random number to display a message.
+	// Can talk a little bit about conditionals
+	// Talk about the problems with this code - duplication in the message. Intro functions
 	var rand = Math.random() * 1000;
 	if (rand > 500) {
 		output('hello world, how are you?');
@@ -45,7 +47,8 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
 	}
 
 	
-	// step 4
+	// step 4 - refactoring to use a function to reduce duplication
+	// Code is still more complex than it needs to be
 	function sayHello(target) {
 		output('hello ' + target + ', how are you?');
 	}
@@ -58,7 +61,8 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
 	}
 
 	
-	// step 5
+	// step 5 - refactoring to reduce cyclomatic complexity
+	// Talk about how it's bad practice to output directly from within a function - less flexible and not testable
 	function sayHello(target) {
 		output('hello ' + target + ', how are you?');
 	}
@@ -71,7 +75,7 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
 	sayHello(name);
 
 
-	// step 6
+	// step 6 - refactor to avoid outputting in a function
 	function sayHello(target) {
 		return 'hello ' + target + ', how are you?';
 	}
@@ -84,7 +88,9 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
 	output(sayHello(name));
 
 	
-	// step 7 - second feature
+	// step 7 - second feature, customisable greeting messages
+	// introduced some technical debt. We now have a function called sayHello that can say things other than Hello
+
 	function sayHello(target, greeting = 'hello') {	
 		return greeting + ' ' + target + ', how are you?';
 	}
@@ -100,6 +106,7 @@ Tell students to Fork this: https://replit.com/@MikeOram/Working-with-developers
 
 
 	// step 8 - tests in the console
+	// Ensuring the code works in the future
 	function sayHello(target, greeting = 'hello') {	
 		return greeting + ' ' + target + ', how are you?';
 	}
